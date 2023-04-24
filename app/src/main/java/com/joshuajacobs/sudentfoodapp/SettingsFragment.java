@@ -5,6 +5,8 @@ import android.preference.PreferenceFragment;
 
 import androidx.annotation.Nullable;
 
+import com.joshuajacobs.sudentfoodapp.R;
+
 public class SettingsFragment extends PreferenceFragment {
 
     @Override

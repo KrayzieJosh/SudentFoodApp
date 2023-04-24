@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.joshuajacobs.sudentfoodapp.R;
+
 public class Payments extends AppCompatActivity {
 
     @Override

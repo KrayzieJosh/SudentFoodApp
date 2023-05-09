@@ -46,7 +46,7 @@ public class LoyaltyPoints {
                 '}';
     }
 
-    private static class Builder{
+    public static class Builder{
         private String purchaseId;
         private int points;
         private ArrayList<Reward> rewardsList;
@@ -62,7 +62,7 @@ public class LoyaltyPoints {
             return this;
         }
 
-        public Builder setRewardsList(ArrayList<Reward> rewardsList) {
+        public Builder setRewardsList(ArrayList rewardsList) {
             this.rewardsList = rewardsList;
             return this;
         }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/bottom_home"
+    android:icon="@drawable/baseline_home_24"
+    android:title="Home"/>
+
+    <item
+        android:id="@+id/bottom_menuUpload"
+        android:icon="@drawable/baseline_restaurant_menu_24"
+        android:title="Menu"/>
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/baseline_business_24"
+        android:title="Restaurant Profile"/>
+    <item
+        android:id="@+id/bottom_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"/>
+
+</menu>

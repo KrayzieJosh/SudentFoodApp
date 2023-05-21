@@ -1,7 +1,5 @@
 package com.joshuajacobs.sudentfoodapp.repository.impl;
 
-import junit.framework.TestCase;
-
 /* LoyaltyPointsRepositoryImplTest.java
  Author: Joshua Jacobs (221144862)
  Date: 9 April 2023
@@ -15,12 +13,8 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import com.joshuajacobs.sudentfoodapp.domain.LoyaltyPoints;
-import com.joshuajacobs.sudentfoodapp.domain.Reward;
-import com.joshuajacobs.sudentfoodapp.factory.RewardFactory;
-import com.joshuajacobs.sudentfoodapp.repository.LoyaltyPointsRepository;
-import com.joshuajacobs.sudentfoodapp.repository.impl.LoyaltyPointsRepositoryImpl;
-import com.joshuajacobs.sudentfoodapp.factory.LoyaltyPointsFactory;
-import com.joshuajacobs.sudentfoodapp.util.Helper;
+        import com.joshuajacobs.sudentfoodapp.factory.LoyaltyPointsFactory;
+import com.joshuajacobs.sudentfoodapp.repository.impl.util.Helper;
 
 import java.util.ArrayList;
 import java.util.Arrays;

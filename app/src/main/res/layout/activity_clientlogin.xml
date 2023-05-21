@@ -51,7 +51,7 @@
             android:textSize="34sp" />
 
         <EditText
-            android:id="@+id/login_email"
+            android:id="@+id/signup_email"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -62,7 +62,7 @@
             android:padding="8dp" />
 
         <EditText
-            android:id="@+id/login_password"
+            android:id="@+id/signup_password"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"

@@ -13,8 +13,6 @@ package com.joshuajacobs.sudentfoodapp.factory;
 import com.joshuajacobs.sudentfoodapp.domain.Reward;
 import com.joshuajacobs.sudentfoodapp.util.Helper;
 
-import java.util.ArrayList;
-
 
 public class RewardFactory {
     public static Reward createReward(String rewardId, String name, String description, int points) {

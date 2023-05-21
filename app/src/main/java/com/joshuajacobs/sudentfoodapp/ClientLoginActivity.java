@@ -11,8 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ClientLoginActivity extends AppCompatActivity {
 
-    private EditText mUsernameEditText, mPasswordEditText;
-    private Button mLoginButton;
+    EditText username, password;
+    Button btnlogin;
+    DBHelper DB;
 
 
     @Override
@@ -20,26 +21,32 @@ public class ClientLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clientlogin);
 
-        mUsernameEditText = findViewById(R.id.login_email);
-        mPasswordEditText = findViewById(R.id.login_password);
-        mLoginButton = findViewById(R.id.login_button);
+        username = (EditText) findViewById(R.id.signup_email);
+        password = (EditText) findViewById(R.id.signup_password);
+        btnlogin = (Button) findViewById(R.id.login_button);
+        DB = new DBHelper(this);
 
 
         //button:
         Button myButton = findViewById(R.id.login_button);
-        myButton.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
 
-                //for database:
-                String username = mUsernameEditText.getText().toString();
-                String password = mPasswordEditText.getText().toString();
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
 
-                DatabaseHelper db = new DatabaseHelper(ClientLoginActivity.this);
-                if (db.checkUser(username, password)) {
-                    Toast.makeText(ClientLoginActivity.this, "Successful", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(ClientLoginActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                if(user.equals("")||pass.equals(""))
+                    Toast.makeText(ClientLoginActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                else{
+                    Boolean checkuserpass = DB.checkusernamepassword(user, pass);
+                    if(checkuserpass==true){
+                        Toast.makeText(ClientLoginActivity.this, "Sign in successfully", Toast.LENGTH_SHORT).show();
+                        //Intent intent  = new Intent(getApplicationContext(), MainActivity.class);
+                        //startActivity(intent);
+                    }else{
+                        Toast.makeText(ClientLoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });

@@ -13,17 +13,17 @@ public class ClientSignUpActivity extends AppCompatActivity {
 
     EditText username, password, repassword;
     Button signup;
-    DBHelper DB;
+    DBHelperClient DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_signup);
 
-        username = (EditText) findViewById(R.id.signup_email);
-        password = (EditText) findViewById(R.id.signup_password);
-        repassword = (EditText) findViewById(R.id.signup_confirm);
-        signup = (Button) findViewById(R.id.signup_button);
-        DB = new DBHelper(this);
+        username = (EditText) findViewById(R.id.client_signup_email);
+        password = (EditText) findViewById(R.id.client_signup_password);
+        repassword = (EditText) findViewById(R.id.client_signup_confirm);
+        signup = (Button) findViewById(R.id.client_signup_button);
+        DB = new DBHelperClient(this);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -25,10 +25,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterVendor"
-            android:exported="false" />
+            android:name=".VendorSignUpActivity"
+            android:exported="true" />
         <activity
-            android:name=".VendorOrCustomer"
+            android:name=".VendorOrCustomerSignUp"
             android:exported="false" />
         <activity
             android:name=".LandingPage"
@@ -51,27 +51,19 @@
 
         <activity
             android:name=".ClientSignUpActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <activity
             android:name=".ClientLoginActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-
-            android:exported="false" />
         <activity
-            android:name=".ClientLoginActivity"
+            android:name=".VendorLoginActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
             android:exported="false"/>
 
     </application>

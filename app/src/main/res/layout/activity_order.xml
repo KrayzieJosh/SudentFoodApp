@@ -10,14 +10,14 @@
         android:layout_width="149dp"
         android:layout_height="130dp"
         android:scaleType="centerCrop"
-        android:src="drawable/download_food_png_file_png_image_pngimg_1.png" />
+        android:src="@drawable/logo" />
 
     <ImageView
         android:id="@+id/imageViewFood2"
         android:layout_width="149dp"
         android:layout_height="130dp"
         android:scaleType="centerCrop"
-        android:src="drawable/red_can.png" />
+        android:src="@drawable/logo" />
 
 
     <TextView

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".RegisterVendor"
+    tools:context=".VendorSignUpActivity"
     >
 
     <LinearLayout
@@ -50,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/userNameRes"
+            android:id="@+id/vendor_signup_email"
             android:layout_width="409dp"
             android:layout_height="49dp"
             android:layout_marginTop="10dp"
@@ -64,7 +64,7 @@
             tools:layout_editor_absoluteY="402dp" />
 
         <EditText
-            android:id="@+id/resName"
+            android:id="@+id/vendor_signup_restaurantName"
             android:layout_width="400dp"
             android:layout_height="49dp"
             android:layout_marginTop="15dp"
@@ -80,7 +80,7 @@
 
 
         <EditText
-            android:id="@+id/resPassword"
+            android:id="@+id/vendor_signup_password"
             android:layout_width="400dp"
             android:layout_height="49dp"
             android:layout_marginTop="15dp"
@@ -95,7 +95,7 @@
             tools:layout_editor_absoluteY="402dp" />
 
         <EditText
-            android:id="@+id/resConfirmPassword"
+            android:id="@+id/vendor_signup_confirmPassword"
             android:layout_width="400dp"
             android:layout_height="49dp"
             android:layout_marginTop="15dp"
@@ -110,7 +110,7 @@
             tools:layout_editor_absoluteY="402dp" />
 
         <TextView
-            android:id="@+id/alreadyAVendor"
+            android:id="@+id/vendor_signup_redirectText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -123,7 +123,7 @@
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/registerAsVendorButton"
+            android:id="@+id/vendor_signup_button"
             android:layout_width="350dp"
             android:layout_height="70dp"
             android:layout_marginStart="30dp"

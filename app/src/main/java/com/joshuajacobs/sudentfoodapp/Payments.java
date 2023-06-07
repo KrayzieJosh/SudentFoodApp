@@ -13,4 +13,5 @@ public class Payments extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payments);
     }
+
 }

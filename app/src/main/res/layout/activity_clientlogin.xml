@@ -40,7 +40,7 @@
 
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/client_login_heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
@@ -51,7 +51,7 @@
             android:textSize="34sp" />
 
         <EditText
-            android:id="@+id/signup_email"
+            android:id="@+id/client_login_email"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -62,7 +62,7 @@
             android:padding="8dp" />
 
         <EditText
-            android:id="@+id/signup_password"
+            android:id="@+id/client_login_password"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -74,7 +74,7 @@
             android:padding="8dp" />
 
         <Button
-            android:id="@+id/login_button"
+            android:id="@+id/client_login_button"
             android:layout_width="350dp"
             android:layout_height="70dp"
             android:layout_marginLeft="30dp"
@@ -85,16 +85,16 @@
             app:cornerRadius="30dp" />
 
         <TextView
-            android:id="@+id/signUpRedirectText"
+            android:id="@+id/client_login_redirectText"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="10dp"
             android:clickable="true"
-            android:onClick="goToClientSignUpPage"
+            android:onClick="goToVendorLoginPage"
             android:padding="8dp"
-            android:text="Don't have an account? Register"
+            android:text="Not a client ? Login here as a vendor"
             android:textColor="@color/teal_700"
             android:textSize="18sp" />
 

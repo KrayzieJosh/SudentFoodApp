@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.joshuajacobs.sudentfoodapp">
+    package="com.joshuajacobs.sudentfoodapp" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,19 +14,27 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.SudentFoodApp"
-        tools:node="merge">
+        tools:node="merge" >
         <activity
-            android:name=".VendorLogin"
-            android:exported="false" />
+            android:name=".VendorOrCustomerLogin"
+            android:exported="false"
+            android:parentActivityName=".LandingPage"
+            />
+        <activity
+            android:name=".VendorLoginActivity"
+            android:exported="false"
+            android:parentActivityName=".VendorSignUpActivity" />
         <activity
             android:name=".VendorHomePage"
             android:exported="false" />
         <activity
-            android:name=".RegisterVendor"
-            android:exported="false" />
+            android:name=".VendorSignUpActivity"
+            android:exported="false"
+            android:parentActivityName=".VendorOrCustomerSignUp" />
         <activity
-            android:name=".VendorOrCustomer"
-            android:exported="false" />
+            android:name=".VendorOrCustomerSignUp"
+            android:exported="false"
+            android:parentActivityName=".LandingPage" />
         <activity
             android:name=".LandingPage"
             android:exported="false" />
@@ -44,13 +52,15 @@
             android:exported="false" />
         <activity
             android:name=".ClientSignUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".VendorOrCustomerSignUp" />
         <activity
             android:name=".ClientLoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".ClientSignUpActivity" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

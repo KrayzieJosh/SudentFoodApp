@@ -17,7 +17,7 @@
     <item
         android:id="@+id/bottom_profile"
         android:icon="@drawable/baseline_business_24"
-        android:title="Restaurant Profile"/>
+        android:title="Profile"/>
 
 
 </menu>

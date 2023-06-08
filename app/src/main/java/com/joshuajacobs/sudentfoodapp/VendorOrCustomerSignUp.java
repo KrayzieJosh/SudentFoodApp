@@ -7,26 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class VendorOrCustomer extends AppCompatActivity {
+public class VendorOrCustomerSignUp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vendor_or_customer);
+        setContentView(R.layout.activity_vendor_or_customer_signup);
 
         Button vendorBtn=(Button)findViewById(R.id.signup_button);
-        Button custBtn= (Button)findViewById((R.id.signup_buttonCustomer)) ;
         vendorBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(VendorOrCustomer.this,RegisterVendor.class));
+                startActivity(new Intent(VendorOrCustomerSignUp.this, VendorSignUpActivity.class));
 
             }
         });
-        custBtn.setOnClickListener(new View.OnClickListener() {
+
+        Button clientBtn = (Button) findViewById(R.id.signup_buttonCustomer);
+        clientBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(VendorOrCustomer.this,ClientSignUpActivity.class));
+                startActivity(new Intent(VendorOrCustomerSignUp.this,ClientSignUpActivity.class));
             }
         });
     }

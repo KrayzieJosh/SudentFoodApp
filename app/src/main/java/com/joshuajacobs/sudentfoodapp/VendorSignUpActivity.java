@@ -60,4 +60,8 @@ public class VendorSignUpActivity extends AppCompatActivity {
         });
 
     }
+    public void goTOVendorLogin(View view) {
+        Intent intent = new Intent(this, VendorLoginActivity.class);
+        startActivity(intent);
+    }
 }

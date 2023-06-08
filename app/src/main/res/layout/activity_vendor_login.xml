@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VendorLogin">
+    tools:context=".VendorLoginActivity">
+
     <LinearLayout
         android:id="@+id/hei"
         android:layout_width="451dp"
@@ -12,6 +13,7 @@
         android:layout_marginBottom="84dp"
         android:background="@drawable/logo"
         android:orientation="vertical"
+        android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +47,7 @@
             android:textSize="34sp" />
 
         <EditText
-            android:id="@+id/signup_email"
+            android:id="@+id/login_email"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -56,7 +58,7 @@
             android:padding="8dp" />
 
         <EditText
-            android:id="@+id/signup_password"
+            android:id="@+id/login_password"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginLeft="30dp"
@@ -86,7 +88,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="10dp"
             android:clickable="true"
-            android:onClick="goToVendorSignUpPage"
+            android:onClick="goTOVendorSignUp"
             android:padding="8dp"
             android:text="Don't have an account? Register as Vendor"
             android:textColor="@color/teal_700"

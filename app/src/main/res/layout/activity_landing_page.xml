@@ -26,7 +26,7 @@
             android:fontFamily="sans-serif"
             android:text="Welcome!"
             android:textAlignment="center"
-            android:textColor="#2196F3"
+            android:textColor="#028080"
             android:textSize="34sp"
             android:textStyle="bold"
             android:layout_marginTop="50dp"/>

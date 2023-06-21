@@ -1,28 +1,52 @@
 package com.joshuajacobs.sudentfoodapp;
 
+import static android.widget.Toast.makeText;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
-import com.joshuajacobs.sudentfoodapp.Payments;
-import com.joshuajacobs.sudentfoodapp.R;
 
-    public class OrderActivity extends AppCompatActivity {
-        @Override
-        protected void onCreate(Bundle savedInstanceState){
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_order);
+public class OrderActivity extends AppCompatActivity {
 
-            Button proceedToPay = findViewById(R.id.proceedPay);
-            proceedToPay.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    startActivity(new Intent(OrderActivity.this , Payments.class));
-                }
-                //fix emulator issue
+    private Button buttonRemoveItem;
+    private Button placeOrderBtn;
 
-            });
-        }}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_order);
+
+        buttonRemoveItem = findViewById(R.id.buttonRemoveItem);
+        placeOrderBtn = findViewById(R.id.placeOrder);
+        buttonRemoveItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the functionality for removing an item
+                removeItem();
+            }
+        });
+
+        placeOrderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the functionality for placing order
+                    startActivity(new Intent(OrderActivity.this,OrderExtendedActivity.class));
+            }
+        });
+    }
+    private void removeItem() {
+        // Logic to remove an item from the order
+        makeText(this, "Item removed from the order", Toast.LENGTH_SHORT).show();
+    }
+
+    private void placeOrder() {
+        // Logic to proceed view order screen
+        makeText(this, "Order placed", Toast.LENGTH_SHORT).show();
+    }
+}
 
 

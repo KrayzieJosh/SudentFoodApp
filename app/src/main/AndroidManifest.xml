@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.joshuajacobs.sudentfoodapp" >
+    package="com.joshuajacobs.sudentfoodapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,7 +14,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SudentFoodApp"
+
         tools:node="merge" >
+
+
+        tools:node="merge">
+
+        <activity
+            android:name=".VendorListView"
+            android:exported="false" />
+        <activity
+            android:name=".VendorProfile"
+            android:exported="false" />
+        <activity
+            android:name=".VendorOrderStatus"
+            android:exported="false" />
+        <activity
+            android:name=".Specials"
+            android:exported="false" />
+        <activity
+            android:name=".VendorMenu"
+            android:exported="false" />
+
+        <activity
+            android:name=".CardFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderExtendedActivity"
+            android:exported="false" />
 
         <activity
 
@@ -30,8 +57,12 @@
         <activity
             android:name=".VendorOrCustomerLogin"
             android:exported="false"
+
             android:parentActivityName=".LandingPage"
             />
+
+
+            android:parentActivityName=".LandingPage" />
 
         <activity
             android:name=".VendorLoginActivity"
@@ -82,8 +113,18 @@
             android:parentActivityName=".ClientSignUpActivity" />
 
         <activity
+
             android:name=".ClientHomePageActivity"
             android:exported="true" />
+
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
 
         <activity
             android:name=".ClientProfileActivity"

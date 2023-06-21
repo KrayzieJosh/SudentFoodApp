@@ -20,9 +20,15 @@ public class VendorLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vendor_login);
 
+
+        username = (EditText) findViewById(R.id.vendor_login_email);
+        password = (EditText) findViewById(R.id.vendor_login_password);
+        btnlogin = (Button) findViewById(R.id.vendor_login_button);
+
         username = (EditText) findViewById(R.id.login_email);
         password = (EditText) findViewById(R.id.login_password);
         btnlogin = (Button) findViewById(R.id.login_button);
+
         DB = new DBHelperVendor(this);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +44,11 @@ public class VendorLoginActivity extends AppCompatActivity {
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                     if(checkuserpass==true){
                         Toast.makeText(VendorLoginActivity.this, "Sign in successfully", Toast.LENGTH_SHORT).show();
+
+                        startActivity(new Intent(VendorLoginActivity.this , MainActivity.class));
+
                         startActivity(new Intent(VendorLoginActivity.this , VendorHomePage.class));
+
                     }else{
                         Toast.makeText(VendorLoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
@@ -47,8 +57,13 @@ public class VendorLoginActivity extends AppCompatActivity {
         });
     }
 
+
+    public void goToClientLogin(View view) {
+        Intent intent = new Intent(this, ClientLoginActivity.class);
+
     public void goTOVendorSignUp(View view) {
         Intent intent = new Intent(this, VendorSignUpActivity.class);
+
         startActivity(intent);
     }
 }

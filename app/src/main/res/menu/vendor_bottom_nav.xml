@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/bottom_home"
-        android:icon="@drawable/baseline_home_24"
-        android:title="Home"/>
+
 
     <item
         android:id="@+id/bottom_menuUpload"
@@ -13,6 +10,11 @@
         android:id="@+id/bottom_specials"
         android:icon="@drawable/baseline_discount_24"
         android:title="Specials"/>
+    <item
+        android:id="@+id/bottom_orders"
+        android:icon="@drawable/baseline_order_24"
+        android:title="Orders"
+        />
 
     <item
         android:id="@+id/bottom_profile"

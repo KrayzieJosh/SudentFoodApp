@@ -26,8 +26,6 @@ public class ClientLoginActivity extends AppCompatActivity {
         btnlogin = (Button) findViewById(R.id.client_login_button);
         DB = new DBHelperClient(this);
 
-        //button:
-        Button myButton = findViewById(R.id.client_login_button);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,17 +36,19 @@ public class ClientLoginActivity extends AppCompatActivity {
                 if(user.equals("")||pass.equals(""))
                     Toast.makeText(ClientLoginActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
                 else{
+
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
+
                     if(checkuserpass==true){
+
                         Toast.makeText(ClientLoginActivity.this, "Sign in successfully", Toast.LENGTH_SHORT).show();
 
                         startActivity(new Intent(ClientLoginActivity.this , ClientHomePageActivity.class));
 
-                        //startActivity(new Intent(ClientLoginActivity.this , MainActivity.class));
-
                     }else{
                         Toast.makeText(ClientLoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
+
                 }
             }
         });

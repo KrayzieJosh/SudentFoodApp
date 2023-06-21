@@ -25,9 +25,9 @@ public class VendorLoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.vendor_login_password);
         btnlogin = (Button) findViewById(R.id.vendor_login_button);
 
-        username = (EditText) findViewById(R.id.login_email);
-        password = (EditText) findViewById(R.id.login_password);
-        btnlogin = (Button) findViewById(R.id.login_button);
+        username = (EditText) findViewById(R.id.vendor_login_email);
+        password = (EditText) findViewById(R.id.vendor_login_password);
+        btnlogin = (Button) findViewById(R.id.vendor_login_button);
 
         DB = new DBHelperVendor(this);
 
@@ -60,10 +60,6 @@ public class VendorLoginActivity extends AppCompatActivity {
 
     public void goToClientLogin(View view) {
         Intent intent = new Intent(this, ClientLoginActivity.class);
-
-    public void goTOVendorSignUp(View view) {
-        Intent intent = new Intent(this, VendorSignUpActivity.class);
-
-        startActivity(intent);
     }
+
 }

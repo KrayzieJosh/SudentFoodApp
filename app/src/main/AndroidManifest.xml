@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SudentFoodApp"
         tools:node="merge" >
+
         <activity
 
             android:name=".SplashScreen"
@@ -25,17 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".VendorSignUpActivity"
-            android:exported="true" />
-        <activity
-            android:name=".VendorOrCustomerSignUp"
-            android:exported="false" />
 
+        <activity
             android:name=".VendorOrCustomerLogin"
             android:exported="false"
             android:parentActivityName=".LandingPage"
             />
+
         <activity
             android:name=".VendorLoginActivity"
             android:exported="false"
@@ -74,25 +71,23 @@
             android:name=".ClientSignUpActivity"
             android:exported="true" />
 
-        <activity
-            android:name=".VendorLoginActivity"
-            android:exported="true" />
 
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
-            android:exported="false"
-            android:parentActivityName=".VendorOrCustomerSignUp" />
+
         <activity
             android:name=".ClientLoginActivity"
-            android:exported="false"
+            android:exported="true"
             android:parentActivityName=".ClientSignUpActivity" />
-        <activity
-            android:name=".SplashScreen"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+        <activity
+            android:name=".ClientHomePageActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ClientProfileActivity"
+            android:exported="false" />
 
     </application>
 

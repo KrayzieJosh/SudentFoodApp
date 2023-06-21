@@ -13,9 +13,15 @@ public class LandingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
+
         //Sign Up Button:
         Button signUp = findViewById(R.id.sign_up_btn);
         signUp.setOnClickListener(new View.OnClickListener() {
+
+        Button sign = findViewById(R.id.sign_up_btn);
+        Button sign2=findViewById(R.id.signInBtn);
+        sign.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LandingPage.this , VendorOrCustomerSignUp.class));
@@ -28,6 +34,15 @@ public class LandingPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LandingPage.this , ClientLoginActivity.class));
+            }
+        });
+
+
+
+        sign2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LandingPage.this,VendorOrCustomerLogin.class));
             }
         });
 

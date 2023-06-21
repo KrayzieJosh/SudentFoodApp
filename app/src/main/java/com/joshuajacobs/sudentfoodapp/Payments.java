@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.joshuajacobs.sudentfoodapp.R;
-import com.joshuajacobs.sudentfoodapp.util.OrderActivity;
+
 
 public class Payments extends AppCompatActivity {
 

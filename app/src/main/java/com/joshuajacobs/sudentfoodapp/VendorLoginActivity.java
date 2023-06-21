@@ -38,7 +38,7 @@ public class VendorLoginActivity extends AppCompatActivity {
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                     if(checkuserpass==true){
                         Toast.makeText(VendorLoginActivity.this, "Sign in successfully", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(VendorLoginActivity.this , VendorHomePage.class));
+                        startActivity(new Intent(VendorLoginActivity.this , VendorMenu.class));
                     }else{
                         Toast.makeText(VendorLoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }

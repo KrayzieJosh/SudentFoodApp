@@ -18,8 +18,6 @@
         tools:node="merge" >
 
 
-        tools:node="merge">
-
         <activity
             android:name=".VendorListView"
             android:exported="false" />
@@ -39,9 +37,7 @@
         <activity
             android:name=".CardFormActivity"
             android:exported="false" />
-        <activity
-            android:name=".OrderExtendedActivity"
-            android:exported="false" />
+
 
         <activity
 
@@ -54,15 +50,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".VendorOrCustomerLogin"
-            android:exported="false"
 
-            android:parentActivityName=".LandingPage"
-            />
-
-
-            android:parentActivityName=".LandingPage" />
 
         <activity
             android:name=".VendorLoginActivity"
@@ -111,19 +99,25 @@
             android:name=".ClientLoginActivity"
             android:exported="true"
             android:parentActivityName=".ClientSignUpActivity" />
+        <activity
+            android:name=".Snack_Recycler"
+            android:exported="false" />
+        <activity
+            android:name=".FoodRecycler"
+            android:exported="false" />
+        <activity
+            android:name=".DrinkRecycler"
+            android:exported="false" />
+        <activity
+            android:name=".Menuactivity"
+            android:exported="false"/>
 
         <activity
-
             android:name=".ClientHomePageActivity"
             android:exported="true" />
 
-            android:name=".OrderActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
+
 
 
         <activity

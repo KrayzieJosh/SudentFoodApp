@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.joshuajacobs.sudentfoodapp">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SudentFoodApp"
+
         tools:node="merge">
         <activity
             android:name=".ClientPersonalDetails"
@@ -27,6 +27,7 @@
         <activity
             android:name=".OrderActivity"
             android:exported="false" />
+
         <activity
             android:name=".VendorListView"
             android:exported="false" />
@@ -45,7 +46,12 @@
         <activity
             android:name=".CardFormActivity"
             android:exported="false" />
+
+
+
         <activity
+
+
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -58,6 +64,11 @@
             android:name=".VendorOrCustomerLogin"
             android:exported="false"
             android:parentActivityName=".LandingPage" />
+
+
+
+
+
         <activity
             android:name=".VendorLoginActivity"
             android:exported="false"
@@ -99,6 +110,7 @@
             android:exported="true"
             android:parentActivityName=".ClientSignUpActivity" />
         <activity
+
             android:name=".ClientHomePageActivity"
             android:exported="true" />
         <activity
@@ -107,6 +119,50 @@
         <activity
             android:name=".ClientAccountDeletionActivity"
             android:exported="false" />
+     <activity
+            android:name=".Snack_Recycler"
+            android:exported="false" />
+        <activity
+            android:name=".FoodRecycler"
+            android:exported="false" />
+        <activity
+            android:name=".DrinkRecycler"
+            android:exported="false" />
+        <activity
+            android:name=".Menuactivity"
+            android:exported="false"/>
+        <activity
+            android:name=".VeganDrinkRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".VeganFodRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".VeganSnackRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".Menuactivity2"
+            android:exported="false"/>
+        <activity
+            android:name=".FadeelsDrinksItemRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".FadeelsSnacksItemRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".FadeelsFoodItemRecycler"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".ClientHomePageActivity"
+            android:exported="true" />
+
+
+
+
+
+
         <activity
             android:name=".views.MenuActivity"
             android:exported="false" />

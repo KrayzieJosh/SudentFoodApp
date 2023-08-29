@@ -34,7 +34,7 @@ public class OrderActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Perform the functionality for placing order
-                    startActivity(new Intent(OrderActivity.this,OrderExtendedActivity.class));
+                    startActivity(new Intent(OrderActivity.this, OrderActivity.class));
             }
         });
     }

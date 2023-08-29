@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingStart="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    tools:context=".RestaurantList">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Restaurants"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="411dp"
+        android:layout_height="644dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.joshuajacobs.sudentfoodapp">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -111,6 +110,28 @@
         <activity
             android:name=".Menuactivity"
             android:exported="false"/>
+        <activity
+            android:name=".VeganDrinkRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".VeganFodRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".VeganSnackRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".Menuactivity2"
+            android:exported="false"/>
+        <activity
+            android:name=".FadeelsDrinksItemRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".FadeelsSnacksItemRecycler"
+            android:exported="false"/>
+        <activity
+            android:name=".FadeelsFoodItemRecycler"
+            android:exported="false"/>
+
 
         <activity
             android:name=".ClientHomePageActivity"

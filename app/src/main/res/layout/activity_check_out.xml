@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOutActivity">
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        &lt;!&ndash; Top Toolbar &ndash;&gt;-->
+
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="?attr/colorPrimary"-->
+<!--            android:elevation="4dp"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
+
+<!--            &lt;!&ndash; Back Button &ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/backButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:contentDescription="Back"-->
+<!--                android:src="@drawable/ic_back" />-->
+
+<!--            &lt;!&ndash; Page Title &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/pageTitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="CheckOut"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="10dp"-->
+<!--            tools:layout_editor_absoluteX="0dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView27"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="CheckOut:"-->
+<!--                android:textSize="30dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView28"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Available Points: $$$"-->
+<!--                android:textSize="25dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView29"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Total: $$$"-->
+<!--                android:textSize="25dp" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="35dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginHorizontal="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Add\nNew Card" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Use\nCurrent Card" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/button7"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginHorizontal="50dp"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:text="Pay" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

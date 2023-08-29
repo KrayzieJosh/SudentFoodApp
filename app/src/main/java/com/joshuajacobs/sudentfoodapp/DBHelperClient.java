@@ -55,4 +55,16 @@ public class DBHelperClient extends SQLiteOpenHelper {
         else
             return false;
     }
+
+    // Method to delete a client by username
+    public Boolean deleteClientByUsername(String username) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        long result = MyDB.delete("clients", "username=?", new String[]{username});
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
 }

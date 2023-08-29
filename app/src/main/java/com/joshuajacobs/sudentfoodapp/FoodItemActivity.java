@@ -1,18 +1,18 @@
 package com.joshuajacobs.sudentfoodapp;
 
 public class FoodItemActivity {
-    private String name;
+    private String foodName;
     private int imageResourceId;
-    private double price;
+    private double foodPrice;
 
     public FoodItemActivity(String name, int imageResourceId, double price) {
-        this.name = name;
+        this.foodName = name;
         this.imageResourceId = imageResourceId;
-        this.price = price;
+        this.foodPrice = price;
     }
 
     public String getName() {
-        return name;
+        return foodName;
     }
 
     public int getImageResourceId() {
@@ -20,11 +20,11 @@ public class FoodItemActivity {
     }
 
     public double getPrice() {
-        return price;
+        return foodPrice;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.foodName = name;
     }
 
     public void setImageResourceId(int imageResourceId) {
@@ -32,6 +32,6 @@ public class FoodItemActivity {
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        this.foodPrice = price;
     }
 }

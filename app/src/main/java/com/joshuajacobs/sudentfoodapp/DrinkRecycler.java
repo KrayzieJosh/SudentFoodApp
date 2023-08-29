@@ -52,7 +52,7 @@ public class DrinkRecycler extends AppCompatActivity {
         values.put("name", drinkItemActivity.getDrinkName());
         values.put("price", drinkItemActivity.getDrinkPrice());
 
-        long newRowId = db.insert("drinks", null, values);
+        long newRowId = db.insert("snacks", null, values);
         if (newRowId != -1) {
             Toast.makeText(this, "Drink added to basket", Toast.LENGTH_SHORT).show();
         } else {

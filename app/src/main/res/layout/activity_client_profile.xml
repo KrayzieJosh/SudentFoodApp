@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="@color/gray_500">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,28 +18,33 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/homeImageView"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:cropToPadding="false"
                 android:foregroundGravity="left"
                 app:srcCompat="@drawable/baseline_home_24" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/accountNameDisplay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:text="Profile"
-                android:textColor="#BCBCBC"
-                android:textSize="40dp" />
+                android:text="ACCOUNT"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
 
         </LinearLayout>
 
@@ -52,15 +58,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/gray_500"
-                    android:padding="20dp"
-                    android:text="Security" />
-
-                <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/notificationBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/gray_500"
@@ -68,7 +66,7 @@
                     android:text="Notifications" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/accountDeletionBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/gray_500"
@@ -76,7 +74,7 @@
                     android:text="Account Deletion" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/personalDetailsBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -85,7 +83,7 @@
                     android:text="Personal Details" />
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/ordersBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/gray_500"
@@ -93,7 +91,7 @@
                     android:text="Orders" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/avaliablePointsBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/gray_500"
@@ -101,7 +99,7 @@
                     android:text="Avaliable Points " />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/settingBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -110,7 +108,7 @@
                     android:text="Settings" />
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/helpBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/gray_500"
@@ -118,7 +116,7 @@
                     android:text="Help" />
 
                 <Button
-                    android:id="@+id/button9"
+                    android:id="@+id/profileLogoutBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/gray_500"

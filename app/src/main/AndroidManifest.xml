@@ -14,8 +14,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SudentFoodApp"
 
-        tools:node="merge" >
-
+        tools:node="merge">
+        <activity
+            android:name=".ClientPersonalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderExtendedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientProfileHelperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
 
         <activity
             android:name=".VendorListView"
@@ -32,13 +43,14 @@
         <activity
             android:name=".VendorMenu"
             android:exported="false" />
-
         <activity
             android:name=".CardFormActivity"
             android:exported="false" />
 
 
+
         <activity
+
 
             android:name=".SplashScreen"
             android:exported="true">
@@ -48,6 +60,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".VendorOrCustomerLogin"
+            android:exported="false"
+            android:parentActivityName=".LandingPage" />
+
+
 
 
 
@@ -72,33 +90,36 @@
         <activity
             android:name=".Payments"
             android:exported="false" />
-
         <activity
             android:name=".Calendar"
             android:exported="false" />
-
         <activity
             android:name=".SettingsActivity"
             android:exported="false" />
-
         <activity
             android:name=".SpinningWheel"
             android:exported="false" />
-
         <activity
             android:name=".ClientSignUpActivity"
             android:exported="true" />
-
-
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".ClientLoginActivity"
             android:exported="true"
             android:parentActivityName=".ClientSignUpActivity" />
         <activity
+
+            android:name=".ClientHomePageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientAccountDeletionActivity"
+            android:exported="false" />
+     <activity
             android:name=".Snack_Recycler"
             android:exported="false" />
         <activity
@@ -141,10 +162,10 @@
 
 
 
-        <activity
-            android:name=".ClientProfileActivity"
-            android:exported="false" />
 
+        <activity
+            android:name=".views.MenuActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

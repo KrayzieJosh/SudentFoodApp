@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.joshuajacobs.sudentfoodapp.views.OrderFragment;
+
 public class CardFormActivity extends AppCompatActivity {
 
     private EditText cardNumberEditText;
@@ -22,7 +24,7 @@ public class CardFormActivity extends AppCompatActivity {
     private EditText cvvEditText;
     private Button submitButton;
     private CheckBox checkBox;
-    private CardDatabaseHelper databaseHelper;
+    private DBHelperCard databaseHelper;
 
     private double accountBalance = 1000.0; // Initial account balance, you can set your own value
 
@@ -38,7 +40,7 @@ public class CardFormActivity extends AppCompatActivity {
         cvvEditText = findViewById(R.id.cvvEditText);
         submitButton = findViewById(R.id.submitButton);
 
-        databaseHelper = new CardDatabaseHelper(this);
+        databaseHelper = new DBHelperCard(this);
 
         checkBox.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,23 +69,8 @@ public class CardFormActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String cardNumber = cardNumberEditText.getText().toString();
-                String cardHolder = cardHolderEditText.getText().toString();
-                String expiration = expirationEditText.getText().toString();
-                String cvv = cvvEditText.getText().toString();
 
-                if (isValidInput(cardNumber, cardHolder, expiration, cvv)) {
-                    double transactionAmount = 50.0; // Set your transaction amount
-                    if (accountBalance >= transactionAmount) {
-                        performTransaction(transactionAmount);
-                        Toast.makeText(CardFormActivity.this, "Transaction successful. Account balance: " + accountBalance + " Points", Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(CardFormActivity.this,Payments.class));
-                    } else {
-                        Toast.makeText(CardFormActivity.this, "Insufficient account balance", Toast.LENGTH_LONG).show();
-                    }
-                } else {
-                    Toast.makeText(CardFormActivity.this, "Please enter valid card details", Toast.LENGTH_LONG).show();
-                }
+                startActivity(new Intent(CardFormActivity.this , OrderFragment.class));
             }
         });
     }
@@ -109,17 +96,17 @@ public class CardFormActivity extends AppCompatActivity {
     }
 }
 
-class CardDatabaseHelper extends SQLiteOpenHelper {
+class DBHelperCard extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "card_details.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final String DATABASE_NAME = "StudentFood.db";
+    private static final int DATABASE_VERSION = 2;
     private static final String TABLE_NAME = "cards";
     private static final String COLUMN_CARD_NUMBER = "card_number";
     private static final String COLUMN_CARD_HOLDER = "card_holder";
     private static final String COLUMN_EXPIRATION = "expiration";
     private static final String COLUMN_CVV = "cvv";
 
-    CardDatabaseHelper(Context context) {
+    DBHelperCard(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

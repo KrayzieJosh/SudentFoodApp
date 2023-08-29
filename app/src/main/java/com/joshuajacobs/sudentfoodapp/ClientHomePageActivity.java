@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.joshuajacobs.sudentfoodapp.views.MenuActivity;
 
 public class ClientHomePageActivity extends AppCompatActivity {
 
@@ -24,8 +25,8 @@ public class ClientHomePageActivity extends AppCompatActivity {
             switch (item.getItemId()){
                 case R.id.bottom_home: return true;
                 case R.id.bottom_menuUpload:
-                    //startActivity(new Intent(getApplicationContext(),VendorMenu.class));
-                    //finish();
+                    startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+                    finish();
                     return true;
 
             }
@@ -37,6 +38,7 @@ public class ClientHomePageActivity extends AppCompatActivity {
                     return true;
 
             }
+
             switch (item.getItemId()){
                 case R.id.bottom_home: return true;
                 //case R.id.bottom_orders:
